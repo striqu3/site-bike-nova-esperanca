@@ -40,28 +40,28 @@ const servicos = [
         nome: "Revisões",
         descricao: "Manutenção completa para garantir segurança, desempenho e maior vida útil da sua bike.",
         preco: "A partir de R$ 170,00",
-        imagem: "assets/images/workshop.jpg"
+        imagem: "assets/images/revisoes.jpg"
     },
     {
         id: 2,
         nome: "Montagem",
         descricao: "Montagem profissional com ajuste fino e cuidado em cada detalhe.",
         preco: "A partir de R$ 110,00",
-        imagem: "assets/images/workshop.jpg"
+        imagem: "assets/images/montagem.jpg"
     },
     {
         id: 3,
         nome: "Pintura",
         descricao: "Renove o visual da sua bicicleta com acabamento de qualidade.",
         preco: "A partir de R$ 350,00",
-        imagem: "assets/images/parts.jpg"
+        imagem: "assets/images/pintura.jpg"
     },
     {
         id: 4,
         nome: "Restaurações",
         descricao: "Restauramos bicicletas com peças originais, preservando a identidade e a qualidade do modelo.",
         preco: "Solicite seu orçamento no WhatsApp",
-        imagem: "assets/images/workshop.jpg",
+        imagem: "assets/images/restauracao.jpg",
         isWhatsapp: true
     }
 ];
@@ -108,7 +108,7 @@ const pecas = [
         nome: "Outras peças",
         descricao: "Grande variedade de componentes sob consulta.",
         preco: "Consulte modelos",
-        imagem: "assets/images/parts.jpg"
+        imagem: "assets/images/quadro.jpg"
     }
 ];
 
