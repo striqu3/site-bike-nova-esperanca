@@ -7,27 +7,27 @@
 const produtos = [
     {
         id: 1,
-        nome: "Mountain Bike",
-        descricao: "Perfeita para trilhas e terrenos acidentados com máxima performance.",
-        preco: "R$ 1.200,00",
+        nome: "Bicicleta Mountain Bike",
+        descricao: "Perfeitas para o dia a dia, lazer e trilhas leves, com ótimo custo-benefício.",
+        preco: "A partir de R$ 1.290,00",
         imagem: "assets/images/mountain-bike.jpg",
-        especificacoes: ["Suspensão frontal", "Pneus off-road", "Freios a disco", "Quadro de aço"]
+        especificacoes: ["Suspensão frontal", "Pneus off-road", "Freios a disco", "Quadro resistente"]
     },
     {
         id: 2,
-        nome: "Bicicleta Urbana",
-        descricao: "Ideal para deslocamento na cidade com conforto e estilo.",
-        preco: "R$ 800,00",
-        imagem: "assets/images/urban-bike.jpg",
-        especificacoes: ["Quadro leve", "Pneus urbanos", "Assento confortável", "Iluminação LED"]
+        nome: "Bicicleta Freerider",
+        descricao: "Mais resistência e estilo para quem busca aventura e desempenho.",
+        preco: "R$ 1.290,00",
+        imagem: "assets/images/hero-bg.jpg",
+        especificacoes: ["Design robusto", "Alta performance", "Componentes premium", "Estilo aventureiro"]
     },
     {
         id: 3,
-        nome: "BMX Profissional",
-        descricao: "Para manobras, truques e diversas modalidades radicais.",
-        preco: "R$ 600,00",
-        imagem: "assets/images/hero-bg.jpg", // Usando hero como fallback ou imagem de ação
-        especificacoes: ["Quadro resistente", "Rodas pequenas", "Manilhas reforçadas", "Ideal para truques"]
+        nome: "Bicicleta Infantil",
+        descricao: "Segurança, conforto e diversão garantida para as crianças.",
+        preco: "R$ 649,00",
+        imagem: "assets/images/urban-bike.jpg",
+        especificacoes: ["Rodinhas laterais", "Freios suaves", "Cores vibrantes", "Ergonomia infantil"]
     }
 ];
 
@@ -35,24 +35,32 @@ const produtos = [
 const servicos = [
     {
         id: 1,
-        nome: "Montagem de Bicicleta",
-        descricao: "Montagem completa de bicicleta nova com ajustes de segurança.",
-        preco: "R$ 80,00",
+        nome: "Revisões",
+        descricao: "Manutenção completa para garantir segurança, desempenho e maior vida útil da sua bike.",
+        preco: "A partir de R$ 170,00",
         imagem: "assets/images/workshop.jpg"
     },
     {
         id: 2,
-        nome: "Troca de Freios",
-        descricao: "Substituição de freios (disco ou V-brake) com ajuste fino.",
-        preco: "R$ 120,00",
-        imagem: "assets/images/parts.jpg"
+        nome: "Montagem",
+        descricao: "Montagem profissional com ajuste fino e cuidado em cada detalhe.",
+        preco: "A partir de R$ 110,00",
+        imagem: "assets/images/workshop.jpg"
     },
     {
         id: 3,
-        nome: "Manutenção Geral",
-        descricao: "Limpeza, lubrificação e ajuste de toda a bicicleta.",
-        preco: "R$ 90,00",
-        imagem: "assets/images/workshop.jpg"
+        nome: "Pintura",
+        descricao: "Renove o visual da sua bicicleta com acabamento de qualidade.",
+        preco: "A partir de R$ 350,00",
+        imagem: "assets/images/parts.jpg"
+    },
+    {
+        id: 4,
+        nome: "Restaurações",
+        descricao: "Restauramos bicicletas com peças originais, preservando a identidade e a qualidade do modelo.",
+        preco: "Solicite seu orçamento no WhatsApp",
+        imagem: "assets/images/workshop.jpg",
+        isWhatsapp: true
     }
 ];
 
@@ -60,24 +68,45 @@ const servicos = [
 const pecas = [
     {
         id: 1,
-        nome: "Freio a Disco",
-        descricao: "Freio a disco hidráulico de alta performance.",
-        preco: "R$ 250,00",
-        imagem: "assets/images/parts.jpg"
+        nome: "Pneus e câmaras",
+        descricao: "Mais segurança, aderência e conforto para qualquer tipo de terreno.",
+        preco: "Consulte modelos",
+        imagem: "assets/images/mountain-bike.jpg"
     },
     {
         id: 2,
-        nome: "Quadro de Alumínio",
-        descricao: "Quadro leve e resistente para todas as modalidades.",
-        preco: "R$ 600,00",
+        nome: "Selins / bancos",
+        descricao: "Conforto e ergonomia para pedais mais longos e agradáveis.",
+        preco: "Consulte modelos",
         imagem: "assets/images/parts.jpg"
     },
     {
         id: 3,
-        nome: "Pneu Off-Road",
-        descricao: "Pneu com aderência máxima para trilhas.",
-        preco: "R$ 150,00",
-        imagem: "assets/images/mountain-bike.jpg"
+        nome: "Freios a disco",
+        descricao: "Frenagem eficiente e segura em qualquer situação.",
+        preco: "Consulte modelos",
+        imagem: "assets/images/parts.jpg"
+    },
+    {
+        id: 4,
+        nome: "Rodas",
+        descricao: "Durabilidade e desempenho para o melhor rendimento da sua bicicleta.",
+        preco: "Consulte modelos",
+        imagem: "assets/images/parts.jpg"
+    },
+    {
+        id: 5,
+        nome: "Acessórios",
+        descricao: "Luzes, suportes, caramanholas e itens para deixar sua bike mais prática e funcional.",
+        preco: "Consulte modelos",
+        imagem: "assets/images/parts.jpg"
+    },
+    {
+        id: 6,
+        nome: "Outras peças",
+        descricao: "Grande variedade de componentes sob consulta.",
+        preco: "Consulte modelos",
+        imagem: "assets/images/parts.jpg"
     }
 ];
 
@@ -115,6 +144,12 @@ function renderServicos() {
     servicos.forEach(servico => {
         const card = document.createElement('div');
         card.className = 'card';
+        
+        let priceHtml = `<div class="price">${servico.preco}</div>`;
+        if (servico.isWhatsapp) {
+            priceHtml = `<a href="https://wa.me/5541999999999" target="_blank" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>`;
+        }
+
         card.innerHTML = `
             <div class="card-img">
                 <img src="${servico.imagem}" alt="${servico.nome}">
@@ -122,7 +157,7 @@ function renderServicos() {
             <div class="card-content">
                 <h3>${servico.nome}</h3>
                 <p>${servico.descricao}</p>
-                <div class="price">${servico.preco}</div>
+                ${priceHtml}
             </div>
         `;
         container.appendChild(card);
@@ -164,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 window.scrollTo({
-                    top: target.offsetTop - 80,
+                    top: target.offsetTop - 120, // Ajustado para o novo header maior
                     behavior: 'smooth'
                 });
             }
