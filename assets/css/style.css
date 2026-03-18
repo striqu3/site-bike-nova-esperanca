@@ -83,8 +83,14 @@ header .container {
 }
 
 .logo img {
-    height: 80px;
+    height: 120px; /* Aumentado de 80px para 120px no PC */
     width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 80px; /* Mantém menor no mobile */
+    }
 }
 
 nav ul {
