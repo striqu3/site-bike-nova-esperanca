@@ -3,6 +3,8 @@
    Gerenciamento de Conteúdo Dinâmico
 */
 
+const WHATSAPP_NUMBER = "554133448161";
+
 // Dados de Produtos
 const produtos = [
     {
@@ -71,35 +73,35 @@ const pecas = [
         nome: "Pneus e câmaras",
         descricao: "Mais segurança, aderência e conforto para qualquer tipo de terreno.",
         preco: "Consulte modelos",
-        imagem: "assets/images/mountain-bike.jpg"
+        imagem: "assets/images/pneus.jpg"
     },
     {
         id: 2,
         nome: "Selins / bancos",
         descricao: "Conforto e ergonomia para pedais mais longos e agradáveis.",
         preco: "Consulte modelos",
-        imagem: "assets/images/parts.jpg"
+        imagem: "assets/images/selim.jpg"
     },
     {
         id: 3,
         nome: "Freios a disco",
         descricao: "Frenagem eficiente e segura em qualquer situação.",
         preco: "Consulte modelos",
-        imagem: "assets/images/parts.jpg"
+        imagem: "assets/images/freios.jpg"
     },
     {
         id: 4,
         nome: "Rodas",
         descricao: "Durabilidade e desempenho para o melhor rendimento da sua bicicleta.",
         preco: "Consulte modelos",
-        imagem: "assets/images/parts.jpg"
+        imagem: "assets/images/rodas.jpg"
     },
     {
         id: 5,
         nome: "Acessórios",
         descricao: "Luzes, suportes, caramanholas e itens para deixar sua bike mais prática e funcional.",
         preco: "Consulte modelos",
-        imagem: "assets/images/parts.jpg"
+        imagem: "assets/images/acessorios.jpg"
     },
     {
         id: 6,
@@ -147,7 +149,7 @@ function renderServicos() {
         
         let priceHtml = `<div class="price">${servico.preco}</div>`;
         if (servico.isWhatsapp) {
-            priceHtml = `<a href="https://wa.me/5541999999999" target="_blank" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>`;
+            priceHtml = `<a href="https://wa.me/${WHATSAPP_NUMBER}" target="_blank" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>`;
         }
 
         card.innerHTML = `
@@ -192,6 +194,12 @@ document.addEventListener('DOMContentLoaded', () => {
     renderServicos();
     renderPecas();
 
+    // Atualizar link do botão flutuante do WhatsApp
+    const whatsappFloat = document.querySelector('.whatsapp-float');
+    if (whatsappFloat) {
+        whatsappFloat.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+    }
+
     // Smooth scroll para links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -199,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 window.scrollTo({
-                    top: target.offsetTop - 120, // Ajustado para o novo header maior
+                    top: target.offsetTop - 120,
                     behavior: 'smooth'
                 });
             }
