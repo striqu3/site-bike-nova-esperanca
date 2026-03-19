@@ -1,7 +1,7 @@
 /* 
    Bike Nova Esperança - Lógica de Produção
    Gerenciamento de Conteúdo Dinâmico
-   v1.3 - Imagem de Leva e Traz corrigida
+   v1.4 - Adicionado serviço de Bike Elétrica
 */
 
 const WHATSAPP_NUMBER = "554133448161";
@@ -71,6 +71,14 @@ const servicos = [
         descricao: "Buscamos e entregamos sua bicicleta com segurança e praticidade.",
         preco: "Solicite seu orçamento no WhatsApp",
         imagem: "assets/images/leva-traz.png",
+        isWhatsapp: true
+    },
+    {
+        id: 6,
+        nome: "Bike Elétrica",
+        descricao: "Manutenção, revisão e montagem de bicicletas elétricas, com cuidado especial nos componentes eletrônicos e segurança do sistema.",
+        preco: "Solicite seu orçamento no WhatsApp",
+        imagem: "assets/images/bike-eletrica.png",
         isWhatsapp: true
     }
 ];
