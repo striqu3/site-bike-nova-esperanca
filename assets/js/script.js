@@ -1,6 +1,7 @@
 /* 
    Bike Nova Esperança - Lógica de Produção
    Gerenciamento de Conteúdo Dinâmico
+   v1.2 - Adicionado serviço de Leva e Traz
 */
 
 const WHATSAPP_NUMBER = "554133448161";
