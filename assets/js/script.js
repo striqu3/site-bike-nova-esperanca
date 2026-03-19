@@ -29,7 +29,7 @@ const produtos = [
         nome: "Bicicleta Infantil",
         descricao: "Segurança, conforto e diversão garantida para as crianças.",
         preco: "R$ 649,00",
-        imagem: "assets/images/urban-bike.jpg"
+        imagem: "assets/images/urban-bike.jpg",
         especificacoes: ["Rodinhas laterais", "Freios suaves", "Cores vibrantes", "Ergonomia infantil"]
     }
 ];
