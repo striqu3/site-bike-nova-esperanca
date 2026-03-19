@@ -63,6 +63,14 @@ const servicos = [
         preco: "Solicite seu orçamento no WhatsApp",
         imagem: "assets/images/restauracao.jpg",
         isWhatsapp: true
+    },
+    {
+        id: 5,
+        nome: "Leva e Traz",
+        descricao: "Buscamos e entregamos sua bicicleta com segurança e praticidade.",
+        preco: "Solicite seu orçamento no WhatsApp",
+        imagem: "assets/images/leva-traz.jpg",
+        isWhatsapp: true
     }
 ];
 
