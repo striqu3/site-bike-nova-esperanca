@@ -13,7 +13,7 @@ const produtos = [
         nome: "Bicicleta Mountain Bike",
         descricao: "Perfeitas para o dia a dia, lazer e trilhas leves, com ótimo custo-benefício.",
         preco: "A partir de R$ 1.290,00",
-        imagem: "assets/images/mountain-bike.jpg",
+        imagem: "assets/images/mountain-bike.webp",
         especificacoes: ["Suspensão frontal", "Pneus off-road", "Freios a disco", "Quadro resistente"]
     },
     {
@@ -21,7 +21,7 @@ const produtos = [
         nome: "Bicicleta Freerider",
         descricao: "Mais resistência e estilo para quem busca aventura e desempenho.",
         preco: "R$ 1.290,00",
-        imagem: "assets/images/hero-bg.jpg",
+        imagem: "assets/images/hero-bg.webp",
         especificacoes: ["Design robusto", "Alta performance", "Componentes premium", "Estilo aventureiro"]
     },
     {
@@ -29,7 +29,7 @@ const produtos = [
         nome: "Bicicleta Infantil",
         descricao: "Segurança, conforto e diversão garantida para as crianças.",
         preco: "R$ 649,00",
-        imagem: "assets/images/urban-bike.jpg",
+        imagem: "assets/images/urban-bike.webp"
         especificacoes: ["Rodinhas laterais", "Freios suaves", "Cores vibrantes", "Ergonomia infantil"]
     }
 ];
@@ -41,28 +41,28 @@ const servicos = [
         nome: "Revisões",
         descricao: "Manutenção completa para garantir segurança, desempenho e maior vida útil da sua bike.",
         preco: "A partir de R$ 170,00",
-        imagem: "assets/images/revisoes.jpg"
+        imagem: "assets/images/revisoes.webp"
     },
     {
         id: 2,
         nome: "Montagem",
         descricao: "Montagem profissional com ajuste fino e cuidado em cada detalhe.",
         preco: "A partir de R$ 110,00",
-        imagem: "assets/images/montagem.jpg"
+        imagem: "assets/images/montagem.webp"
     },
     {
         id: 3,
         nome: "Pintura",
         descricao: "Renove o visual da sua bicicleta com acabamento de qualidade.",
         preco: "A partir de R$ 350,00",
-        imagem: "assets/images/pintura.jpg"
+        imagem: "assets/images/pintura.webp"
     },
     {
         id: 4,
         nome: "Restaurações",
         descricao: "Restauramos bicicletas com peças originais, preservando a identidade e a qualidade do modelo.",
         preco: "Solicite seu orçamento no WhatsApp",
-        imagem: "assets/images/restauracao.jpg",
+        imagem: "assets/images/restauracao.webp",
         isWhatsapp: true
     },
     {
@@ -70,7 +70,7 @@ const servicos = [
         nome: "Leva e Traz",
         descricao: "Buscamos e entregamos sua bicicleta com segurança e praticidade.",
         preco: "Solicite seu orçamento no WhatsApp",
-        imagem: "assets/images/leva-traz.png",
+        imagem: "assets/images/leva-traz.webp",
         isWhatsapp: true
     },
     {
@@ -78,7 +78,7 @@ const servicos = [
         nome: "Bike Elétrica",
         descricao: "Manutenção, revisão e montagem de bicicletas elétricas, com cuidado especial nos componentes eletrônicos e segurança do sistema.",
         preco: "Solicite seu orçamento no WhatsApp",
-        imagem: "assets/images/bike-eletrica.png",
+        imagem: "assets/images/bike-eletrica.webp",
         isWhatsapp: true
     }
 ];
@@ -90,42 +90,42 @@ const pecas = [
         nome: "Pneus e câmaras",
         descricao: "Mais segurança, aderência e conforto para qualquer tipo de terreno.",
         preco: "Consulte modelos",
-        imagem: "assets/images/pneus.jpg"
+        imagem: "assets/images/pneus.webp"
     },
     {
         id: 2,
         nome: "Selins / bancos",
         descricao: "Conforto e ergonomia para pedais mais longos e agradáveis.",
         preco: "Consulte modelos",
-        imagem: "assets/images/selim.jpg"
+        imagem: "assets/images/selim.webp"
     },
     {
         id: 3,
         nome: "Freios a disco",
         descricao: "Frenagem eficiente e segura em qualquer situação.",
         preco: "Consulte modelos",
-        imagem: "assets/images/freios.jpg"
+        imagem: "assets/images/freios.webp"
     },
     {
         id: 4,
         nome: "Rodas",
         descricao: "Durabilidade e desempenho para o melhor rendimento da sua bicicleta.",
         preco: "Consulte modelos",
-        imagem: "assets/images/rodas.jpg"
+        imagem: "assets/images/rodas.webp"
     },
     {
         id: 5,
         nome: "Acessórios",
         descricao: "Luzes, suportes, caramanholas e itens para deixar sua bike mais prática e funcional.",
         preco: "Consulte modelos",
-        imagem: "assets/images/acessorios.jpg"
+        imagem: "assets/images/acessorios.webp"
     },
     {
         id: 6,
         nome: "Outras peças",
         descricao: "Grande variedade de componentes sob consulta.",
         preco: "Consulte modelos",
-        imagem: "assets/images/quadro.jpg"
+        imagem: "assets/images/quadro.webp"
     }
 ];
 
