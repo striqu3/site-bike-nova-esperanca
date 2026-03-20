@@ -191,6 +191,9 @@ function renderPecas() {
     pecas.forEach(peca => {
         const card = document.createElement('div');
         card.className = 'card';
+        const mensagem = `Olá! Gostaria de saber mais sobre os modelos de ${peca.nome}.`;
+        const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;
+        
         card.innerHTML = `
             <div class="card-img">
                 <img src="${peca.imagem}" alt="${peca.nome}">
@@ -198,7 +201,7 @@ function renderPecas() {
             <div class="card-content">
                 <h3>${peca.nome}</h3>
                 <p>${peca.descricao}</p>
-                <div class="price">${peca.preco}</div>
+                <a href="${whatsappLink}" target="_blank" class="btn-consultar">Consulte modelos</a>
             </div>
         `;
         container.appendChild(card);
